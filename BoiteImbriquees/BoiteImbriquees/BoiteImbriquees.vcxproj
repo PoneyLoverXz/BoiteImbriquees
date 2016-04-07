@@ -146,8 +146,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boite.h" />
+    <ClInclude Include="ComboHorizontal.h" />
+    <ClInclude Include="ComboVertical.h" />
     <ClInclude Include="IBoite.h" />
     <ClInclude Include="IEnumetateur.h" />
+    <ClInclude Include="Mono.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

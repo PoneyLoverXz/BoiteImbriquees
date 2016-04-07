@@ -39,11 +39,15 @@
 //}
 
 #include "boite.h"
+#include "ComboVertical.h"
 
 int main()
 {
 	Boite b{ "Salut les \n amis" };
-	Boite c{ "" };
+	Boite c{ "wellup" };
 	cout << b;
 	cout << c;
+
+	ComboVertical cv { b, c };
+	cout << cv;
 }

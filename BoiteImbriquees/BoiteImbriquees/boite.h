@@ -14,6 +14,7 @@ public:
 
 ostream& operator << (ostream& os, Boite boite)
 {
+	// Affichage par défaut des boite (à refaire)
 	string text = boite.getText();
 	int size = text.size();
 
