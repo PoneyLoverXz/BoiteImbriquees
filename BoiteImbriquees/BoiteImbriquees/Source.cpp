@@ -42,6 +42,8 @@
 
 int main()
 {
-	Boite b{ "Salut les amis" };
+	Boite b{ "Salut les \n amis" };
+	Boite c{ "" };
 	cout << b;
+	cout << c;
 }

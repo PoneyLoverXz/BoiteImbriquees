@@ -18,7 +18,8 @@ ostream& operator << (ostream& os, Boite boite)
 	int size = text.size();
 
 	os << "+" << string(size, '-') << "+" << endl;
-	os << '|' << text << '|' << endl;
+	if(size > 0)
+		os << '|' << text << '|' << endl;
 	os << "+" << string(size, '-') << "+" << endl;
 	
 	return os;
