@@ -3,6 +3,7 @@
 
 class Mono : IBoite
 {
+	string text;
 public:
 	virtual string print()
 	{

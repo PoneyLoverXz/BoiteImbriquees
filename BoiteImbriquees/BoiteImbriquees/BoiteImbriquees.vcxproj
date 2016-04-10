@@ -149,7 +149,7 @@
     <ClInclude Include="ComboHorizontal.h" />
     <ClInclude Include="ComboVertical.h" />
     <ClInclude Include="IBoite.h" />
-    <ClInclude Include="IEnumetateur.h" />
+    <ClInclude Include="IEnumerateur.h" />
     <ClInclude Include="Mono.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
