@@ -1,2 +1,88 @@
 ﻿  Source.cpp
-  BoiteImbriquees.vcxproj -> C:\Users\ap_al\Desktop\BoiteImbriquees\BoiteImbriquees\Debug\BoiteImbriquees.exe
+c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.h(14): error C2593: 'operator <<' est ambigu
+  z:\program files (x86)\visual studio\vc\include\ostream(497): note: est peut-être 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(477): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(457): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+  z:\program files (x86)\visual studio\vc\include\ostream(437): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+  z:\program files (x86)\visual studio\vc\include\ostream(417): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+  z:\program files (x86)\visual studio\vc\include\ostream(396): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+  z:\program files (x86)\visual studio\vc\include\ostream(376): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+  z:\program files (x86)\visual studio\vc\include\ostream(355): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+  z:\program files (x86)\visual studio\vc\include\ostream(335): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+  z:\program files (x86)\visual studio\vc\include\ostream(315): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+  z:\program files (x86)\visual studio\vc\include\ostream(290): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+  z:\program files (x86)\visual studio\vc\include\ostream(270): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+  z:\program files (x86)\visual studio\vc\include\ostream(236): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+  z:\program files (x86)\visual studio\vc\include\ostream(216): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+  z:\program files (x86)\visual studio\vc\include\ostream(209): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+  z:\program files (x86)\visual studio\vc\include\ostream(202): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+  z:\program files (x86)\visual studio\vc\include\ostream(196): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\iboite.h(19): note: ou       'std::ostream &operator <<<std::string>(std::ostream &,T)'
+          with
+          [
+              T=std::string
+          ]
+  z:\program files (x86)\visual studio\vc\include\string(167): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,std::allocator<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'
+  z:\program files (x86)\visual studio\vc\include\ostream(1021): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+  z:\program files (x86)\visual studio\vc\include\ostream(983): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,std::string>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty &)'
+          with
+          [
+              _Ty=std::string
+          ]
+  z:\program files (x86)\visual studio\vc\include\ostream(973): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(966): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(959): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(952): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(826): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(779): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(741): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(694): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.h(14): note: lors de la tentative de mise en correspondance de la liste des arguments '(std::ostream, const std::string)'
+c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\boite.h(9): error C2259: 'IBoite' : impossible d'instancier une classe abstraite
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\boite.h(9): note: à cause des membres suivants :
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\boite.h(9): note: 'std::ostream &IBoite::print(std::ostream &) const' : est abstrait
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\iboite.h(15): note: voir la déclaration de 'IBoite::print'
+c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\combovertical.h(15): error C2593: 'operator <<' est ambigu
+  z:\program files (x86)\visual studio\vc\include\ostream(497): note: est peut-être 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(477): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(457): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+  z:\program files (x86)\visual studio\vc\include\ostream(437): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+  z:\program files (x86)\visual studio\vc\include\ostream(417): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+  z:\program files (x86)\visual studio\vc\include\ostream(396): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+  z:\program files (x86)\visual studio\vc\include\ostream(376): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+  z:\program files (x86)\visual studio\vc\include\ostream(355): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+  z:\program files (x86)\visual studio\vc\include\ostream(335): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+  z:\program files (x86)\visual studio\vc\include\ostream(315): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+  z:\program files (x86)\visual studio\vc\include\ostream(290): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+  z:\program files (x86)\visual studio\vc\include\ostream(270): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+  z:\program files (x86)\visual studio\vc\include\ostream(236): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+  z:\program files (x86)\visual studio\vc\include\ostream(216): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+  z:\program files (x86)\visual studio\vc\include\ostream(209): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+  z:\program files (x86)\visual studio\vc\include\ostream(202): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+  z:\program files (x86)\visual studio\vc\include\ostream(196): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\boite.h(23): note: ou       'std::ostream &operator <<(std::ostream &,const Boite &)'
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\iboite.h(19): note: ou       'std::ostream &operator <<<const char*>(std::ostream &,T)'
+          with
+          [
+              T=const char *
+          ]
+  z:\program files (x86)\visual studio\vc\include\ostream(1021): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+  z:\program files (x86)\visual studio\vc\include\ostream(983): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,char[12]>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty (&))'
+          with
+          [
+              _Ty=char [12]
+          ]
+  z:\program files (x86)\visual studio\vc\include\ostream(973): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(966): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(959): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(952): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(866): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const _Elem *)'
+          with
+          [
+              _Elem=char
+          ]
+  z:\program files (x86)\visual studio\vc\include\ostream(826): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(779): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  z:\program files (x86)\visual studio\vc\include\ostream(741): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  z:\program files (x86)\visual studio\vc\include\ostream(694): note: ou       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  c:\users\sunshine\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\combovertical.h(15): note: lors de la tentative de mise en correspondance de la liste des arguments '(std::basic_ostream<char,std::char_traits<char>>, const char [12])'

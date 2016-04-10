@@ -1,27 +1,37 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "Mono.h"
 using namespace std;
 
 class Boite
 {
-	string text;
-
+	IBoite iboite;
 public:
-	Boite(string text) : text {text} {}
-	string getText() { return text; }
+	Boite() {}
+	Boite(string text) 
+	{
+		iboite = IBoite<Mono>{text};
+	}
+
+	ostream& print(ostream& os) const
+	{
+		return iboite.print(os);
+	}
 };
 
-ostream& operator << (ostream& os, Boite boite)
+ostream& operator << (ostream& os, const Boite& boite)
 {
-	// Affichage par défaut des boite (à refaire)
-	string text = boite.getText();
-	int size = text.size();
+	return boite.print(os);
 
-	os << "+" << string(size, '-') << "+" << endl;
-	if(size > 0)
-		os << '|' << text << '|' << endl;
-	os << "+" << string(size, '-') << "+" << endl;
-	
-	return os;
+	//// Affichage par défaut des boite (à refaire)
+	//string text = boite.getText();
+	//int size = text.size();
+
+	//os << "+" << string(size, '-') << "+" << endl;
+	//if(size > 0)
+	//	os << '|' << text << '|' << endl;
+	//os << "+" << string(size, '-') << "+" << endl;
+	//
+	//return os;
 }

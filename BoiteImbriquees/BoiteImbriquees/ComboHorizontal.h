@@ -1,15 +1,18 @@
 #pragma once
 #include "IBoite.h"
+#include "boite.h"
 
-class ComboHorizontal : IBoite
+class ComboHorizontal : public IBoite
 {
+	Boite gauche;
+	Boite droite;
 public:
-	virtual string print()
+	ComboHorizontal() {}
+	ComboHorizontal(Boite b1, Boite b2) : gauche(b1), droite(b2) {}
+
+	virtual ostream& print(ostream& os) const
 	{
-		// Pour l'instant
-		string text = b1.getText();
-		text += "\n";
-		text += b2.getText();
-		return text;
+		os << gauche << " | " << droite << endl;
+		return os;
 	}
 };

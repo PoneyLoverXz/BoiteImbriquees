@@ -1,15 +1,18 @@
 #pragma once
 #include "IBoite.h"
+#include "boite.h"
 
-class ComboVertical : IBoite
+class ComboVertical : public IBoite
 {
+	Boite haut;
+	Boite bas;
 public:
-	virtual string print()
+	ComboVertical() {}
+	ComboVertical(Boite b1, Boite b2) : haut(b1), bas(b2) {}
+
+	virtual ostream& print(ostream& os) const
 	{
-		// Pour l'instant
-		string text = b1.getText();
-		text += "\n";
-		text += b2.getText();
-		return text;
+		os << haut << endl << "-----------" << bas << endl;
+		return os;
 	}
 };

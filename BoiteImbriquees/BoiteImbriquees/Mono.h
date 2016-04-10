@@ -1,16 +1,17 @@
 #pragma once
 #include "IBoite.h"
 
-class Mono : IBoite
+class Mono : public IBoite
 {
 	string text;
 public:
-	virtual string print()
+	Mono(){}
+
+	Mono(string text) : text(text){}
+
+	virtual ostream& print(ostream& os) const
 	{
-		// Pour l'instant
-		string text = b1.getText();
-		text += "\n";
-		text += b2.getText();
-		return text;
+		os << text << endl;
+		return os;
 	}
 };
