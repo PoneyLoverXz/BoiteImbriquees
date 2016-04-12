@@ -1,23 +1,16 @@
 #pragma once
-#include "IEnumerateur.h"
-#include <iostream>
+#include <istream>
 using namespace std;
-
-struct IBoite
+class IBoite
 {
 protected:
-	int hauteur;
-	int largeur;
+	int hauteur = 0;
+	int largeur = 0;
 
 public:
-	IBoite(){}
-
-	virtual ostream& print(ostream& os) const {};
+	IBoite();
+	~IBoite();
+	virtual ostream& print(ostream& os) const;
+	
 };
 
-ostream& operator << (ostream& os, IBoite boite)
-{
-	// Appeller la fonction print des enfants pour afficher custom
-	boite.print(os);
-	return os;
-}

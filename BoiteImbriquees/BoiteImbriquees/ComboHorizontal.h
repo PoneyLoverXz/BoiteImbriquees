@@ -4,15 +4,12 @@
 
 class ComboHorizontal : public IBoite
 {
-	Boite gauche;
-	Boite droite;
+	Boite * gauche = nullptr;
+	Boite * droite = nullptr;
 public:
-	ComboHorizontal() {}
-	ComboHorizontal(Boite b1, Boite b2) : gauche(b1), droite(b2) {}
+	ComboHorizontal();
+	ComboHorizontal(Boite b1, Boite b2);
+	~ComboHorizontal();
 
-	virtual ostream& print(ostream& os) const
-	{
-		os << gauche << " | " << droite << endl;
-		return os;
-	}
+	virtual ostream& print(ostream& os) const;
 };

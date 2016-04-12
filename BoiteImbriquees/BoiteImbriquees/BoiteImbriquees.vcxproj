@@ -142,6 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Boite.cpp" />
+    <ClCompile Include="ComboHorizontal.cpp" />
+    <ClCompile Include="ComboVertical.cpp" />
+    <ClCompile Include="IBoite.cpp" />
+    <ClCompile Include="Mono.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

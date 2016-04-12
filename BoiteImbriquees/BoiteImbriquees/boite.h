@@ -1,37 +1,25 @@
 #pragma once
-#include <string>
-#include <iostream>
+#include "IBoite.h"
 #include "Mono.h"
-using namespace std;
 
+class ComboVertical;
+class ComboHorizontal;
+class Mono;
 class Boite
 {
-	IBoite iboite;
+	IBoite * m_iboite = nullptr;
 public:
-	Boite() {}
-	Boite(string text) 
-	{
-		iboite = IBoite<Mono>{text};
-	}
+	Boite();
+	Boite(string text);
 
-	ostream& print(ostream& os) const
-	{
-		return iboite.print(os);
-	}
+	Boite(ComboVertical cv);
+
+	Boite(ComboHorizontal ch);
+
+	Boite(Mono mono);
+
+	~Boite();
+
+	ostream& print(ostream& os) const;
 };
 
-ostream& operator << (ostream& os, const Boite& boite)
-{
-	return boite.print(os);
-
-	//// Affichage par défaut des boite (à refaire)
-	//string text = boite.getText();
-	//int size = text.size();
-
-	//os << "+" << string(size, '-') << "+" << endl;
-	//if(size > 0)
-	//	os << '|' << text << '|' << endl;
-	//os << "+" << string(size, '-') << "+" << endl;
-	//
-	//return os;
-}

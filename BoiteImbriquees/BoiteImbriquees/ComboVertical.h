@@ -4,15 +4,11 @@
 
 class ComboVertical : public IBoite
 {
-	Boite haut;
-	Boite bas;
+	Boite * haut = nullptr;
+	Boite * bas = nullptr;
 public:
-	ComboVertical() {}
-	ComboVertical(Boite b1, Boite b2) : haut(b1), bas(b2) {}
-
-	virtual ostream& print(ostream& os) const
-	{
-		os << haut << endl << "-----------" << bas << endl;
-		return os;
-	}
+	ComboVertical();
+	ComboVertical(Boite b1, Boite b2);
+	~ComboVertical();
+	virtual ostream& print(ostream& os) const;
 };
