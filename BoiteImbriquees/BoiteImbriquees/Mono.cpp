@@ -21,6 +21,8 @@ Mono::Mono(string s) : text(s)
 		index = s.find('\n');
 	}
 	v.push_back(s);
+	if (s.length() > Largeur)
+		Largeur = s.length();
 	hauteur = v.size();
 	largeur = Largeur;
 }

@@ -12,5 +12,7 @@ public:
 
 	~Mono();
 
+
+
 	virtual ostream& print(ostream& os) const;
 };

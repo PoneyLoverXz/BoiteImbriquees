@@ -18,6 +18,9 @@ public:
 
 	Boite(Mono mono);
 
+	int getLargeur() const;
+	int getHauteur() const;
+
 	~Boite();
 
 	ostream& print(ostream& os) const;

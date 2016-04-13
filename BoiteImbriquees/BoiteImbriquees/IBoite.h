@@ -10,6 +10,12 @@ protected:
 public:
 	IBoite();
 	~IBoite();
+
+	int getHauteur();
+	int getLargeur();
+
+	void setHauteur(int Hauteur);
+	void setLargeur(int Largeur);
 	virtual ostream& print(ostream& os) const;
 	
 };

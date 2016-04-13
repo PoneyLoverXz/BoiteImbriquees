@@ -2,36 +2,39 @@
 #include "ComboHorizontal.h"
 #include "ComboVertical.h"
 #include <iostream>
+#include <string>
+using namespace std;
 
 ostream& operator << (ostream& os, const Boite& boite)
 {
+	os << '+' << string(boite.getLargeur(), '-') << '+' << endl;
 	boite.print(os);
+	os << '+' << string(boite.getLargeur(), '-') << '+' << endl;
 	return os;
 }
 
 int main()
 {
-	using namespace std;
 	Boite b;
-	cout << b << endl;
+	//cout << b << endl;
 	string texte = R"(Man! Hey!!!
 ceci est un test
 multiligne)";
 	string aut_texte = "Ceci\nitou, genre";
 	Boite b0{ texte };
 	Boite b1{ aut_texte };
-	cout << b0 << endl << b1 << endl;
+    //cout << b0 << endl << b1 << endl;
 	ComboVertical cv{ b0, b1 };
 	cout << Boite{ cv } << endl;
 	ComboHorizontal ch{ b0, b1 };
-	cout << Boite{ ch } << endl;
+	//cout << Boite{ ch } << endl;
 	ComboVertical cvplus{ Boite{ cv }, Boite{ ch } };
-	cout << Boite{ cvplus } << endl;
+	//cout << Boite{ cvplus } << endl;
 	ComboHorizontal chplus{ Boite{ cv }, Boite{ ch } };
-	cout << Boite{ chplus } << endl;
+	//cout << Boite{ chplus } << endl;
 	ComboVertical cvv{ Boite{ chplus }, Boite{ "coucou" } };
-	cout << Boite{ cvv } << endl;
-	cout << Boite{
+	//cout << Boite{ cvv } << endl;
+	/*cout << Boite{
 		ComboHorizontal{
 		Boite{ "a\nb\nc\nd\ne" },
 		Boite{
@@ -40,6 +43,6 @@ multiligne)";
 	}
 	}
 	}
-	} << endl;
+	} << endl;*/
 }
 
