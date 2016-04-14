@@ -24,7 +24,7 @@ ComboHorizontal::~ComboHorizontal()
 
 ostream& ComboHorizontal::print(ostream& os) const
 {
-	gauche->print(os) << " | ";
+	gauche->print(os);
 	droite->print(os);
 	return os;
 }

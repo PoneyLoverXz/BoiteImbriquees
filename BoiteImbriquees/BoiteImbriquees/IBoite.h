@@ -1,4 +1,5 @@
 #pragma once
+#include "IEnumerateur.h"
 #include <istream>
 using namespace std;
 class IBoite
@@ -17,6 +18,6 @@ public:
 	void setHauteur(int Hauteur);
 	void setLargeur(int Largeur);
 	virtual ostream& print(ostream& os) const;
-	
+
 };
 

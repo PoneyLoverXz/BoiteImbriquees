@@ -1,10 +1,10 @@
 #pragma once
 #include "IBoite.h"
-
+#include <vector>
 
 class Mono : public IBoite
 {
-	string text;
+	std::vector<string> text;
 public:
 	Mono();
 

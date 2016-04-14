@@ -23,7 +23,7 @@ ComboVertical::~ComboVertical()
 
 ostream& ComboVertical::print(ostream& os) const
 {
-	haut->print(os) << string(largeur, '-') << endl;
+	haut->print(os) << "|" << string(largeur, '-') << endl;
 	bas->print(os);
 	return os;
 }

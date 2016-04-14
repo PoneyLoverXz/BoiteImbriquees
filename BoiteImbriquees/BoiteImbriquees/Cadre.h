@@ -1,6 +1,8 @@
 #pragma once
-
+#include "boite.h"
 class Cadre
 {
-	Cadre(int Largeur, int Hauteur);
+public:
+	Cadre();
+	Cadre(Boite b, ostream& os);
 };

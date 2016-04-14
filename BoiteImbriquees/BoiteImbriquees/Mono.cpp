@@ -6,7 +6,7 @@ using namespace std;
 
 Mono::Mono() {}
 
-Mono::Mono(string s) : text(s) 
+Mono::Mono(string s)
 {
 	vector<string> v;
 	int index = s.find('\n');
@@ -23,6 +23,7 @@ Mono::Mono(string s) : text(s)
 	v.push_back(s);
 	if (s.length() > Largeur)
 		Largeur = s.length();
+	text = v;
 	hauteur = v.size();
 	largeur = Largeur;
 }
@@ -31,6 +32,12 @@ Mono::~Mono() {}
 
 ostream& Mono::print(ostream& os) const
 {
-	os << text << endl;
+	for (int i = 0; i < hauteur; i++)
+	{
+		if(i < text.size())
+			os << "|" << text[i] << string(largeur - (text[i].length()),' ') << "|" << endl;
+		else 
+			os << "|" << string(largeur,' ') << "|" << endl;
+	}
 	return os;
 }
