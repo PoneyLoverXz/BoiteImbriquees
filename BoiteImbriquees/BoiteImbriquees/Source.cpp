@@ -8,7 +8,8 @@ using namespace std;
 
 ostream& operator << (ostream& os, const Boite& boite)
 {
-	Cadre(boite, os);
+	//Cadre(boite, os);
+	boite.print(os);
 	return os;
 }
 
@@ -22,17 +23,17 @@ multiligne)";
 	string aut_texte = "Ceci\nitou, genre";
 	Boite b0{ texte };
 	Boite b1{ aut_texte };
-    //cout << b0 << endl << b1 << endl;
+    cout << b0 << endl << b1 << endl;
 	ComboVertical cv{ b0, b1 };
-	//cout << Boite{ cv } << endl;
+	cout << Boite{ cv } << endl;
 	ComboHorizontal ch{ b0, b1 };
-	//cout << Boite{ ch } << endl;
+	cout << Boite{ ch } << endl;
 	ComboVertical cvplus{ Boite{ cv }, Boite{ ch } };
-	//cout << Boite{ cvplus } << endl;
+	cout << Boite{ cvplus } << endl;
 	ComboHorizontal chplus{ Boite{ cv }, Boite{ ch } };
 	//cout << Boite{ chplus } << endl;
 	ComboVertical cvv{ ch, ch};
-	cout << Boite{ cvv } << endl;
+    cout << Boite{ cvv } << endl;
 	/*cout << Boite{
 		ComboHorizontal{
 		Boite{ "a\nb\nc\nd\ne" },

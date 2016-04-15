@@ -10,7 +10,7 @@ ComboHorizontal::ComboHorizontal(Boite b1, Boite b2)
 {
 	gauche = new Boite(b1);
 	droite = new Boite(b2);
-	largeur = gauche->getLargeur() + droite->getLargeur();
+	largeur = gauche->getLargeur() + droite->getLargeur() + 1; //1 étant la séparation entre les Boites.
 	hauteur = gauche->getHauteur() > droite->getHauteur() ? gauche->getHauteur() : droite->getHauteur();
 }
 
@@ -22,9 +22,9 @@ ComboHorizontal::~ComboHorizontal()
 	//	delete droite;
 }
 
-ostream& ComboHorizontal::print(ostream& os) const
+string ComboHorizontal::getLine(int no, int largeurTotal)
 {
-	gauche->print(os);
-	droite->print(os);
-	return os;
+	string textGauche = gauche->getLine(no, largeurTotal - gauche->getLargeur());
+	string textDroite = droite->getLine(no, largeurTotal - gauche->getLargeur());
+	return textGauche + string(gauche->getLargeur() - textGauche.length(),' ') + "|" + textDroite + string(largeur - gauche->getLargeur() - textDroite.length() -1, ' ') + "|";
 }

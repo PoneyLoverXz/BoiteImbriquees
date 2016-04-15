@@ -11,5 +11,5 @@ public:
 	ComboHorizontal(Boite b1, Boite b2);
 	~ComboHorizontal();
 
-	virtual ostream& print(ostream& os) const;
+	string getLine(int no, int largeurTotal);
 };

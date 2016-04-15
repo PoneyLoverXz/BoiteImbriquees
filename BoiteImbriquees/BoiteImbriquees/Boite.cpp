@@ -48,9 +48,24 @@ int Boite::getHauteur() const
 
 ostream& Boite::print(ostream& os) const
 {
-	if (m_iboite)
-		m_iboite->print(os);
+	os << "+" << string(getLargeur(), '-') << "+" << endl;
+	for (int i = 0; i < getHauteur(); ++i)
+	{
+		string line = m_iboite->getLine(i, getLargeur());
+		
+		os << "|" << line << endl;
+	}
+	os << "+" << string(getLargeur(), '-') << "+" << endl;
 
+	//if (m_iboite)
+	//	m_iboite->print(os);
+
+	//return os;
 	return os;
+}
+
+string Boite::getLine(int no, int largeurTotal)
+{
+	return m_iboite->getLine(no, largeurTotal - getLargeur());
 }
 

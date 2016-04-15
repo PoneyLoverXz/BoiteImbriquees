@@ -5,14 +5,15 @@
 class Mono : public IBoite
 {
 	std::vector<string> text;
+	int noLigne;
 public:
 	Mono();
 
 	Mono(string text);
 
+	Mono(string text, int no);
+
 	~Mono();
 
-
-
-	virtual ostream& print(ostream& os) const;
+	string getLine(int no, int largeurTotal);
 };

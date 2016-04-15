@@ -23,6 +23,8 @@ public:
 
 	~Boite();
 
+	string getLine(int no, int largeurTotal);
+
 	ostream& print(ostream& os) const;
 };
 

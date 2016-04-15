@@ -1,13 +1,13 @@
 #pragma once
 #include "IEnumerateur.h"
 #include <istream>
+#include <vector>
 using namespace std;
 class IBoite
 {
 protected:
 	int hauteur = 0;
 	int largeur = 0;
-
 public:
 	IBoite();
 	~IBoite();
@@ -17,7 +17,6 @@ public:
 
 	void setHauteur(int Hauteur);
 	void setLargeur(int Largeur);
-	virtual ostream& print(ostream& os) const;
-
+	virtual string getLine(int no, int largeurTotal);
 };
 

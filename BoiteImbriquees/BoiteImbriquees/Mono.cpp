@@ -28,16 +28,40 @@ Mono::Mono(string s)
 	largeur = Largeur;
 }
 
+Mono::Mono(string s, int no)
+{
+	vector<string> v;
+	int index = s.find('\n');
+	int Largeur = 0;
+	while (index != string::npos)
+	{
+		string newString = s.substr(0, index);
+		if (newString.length() > Largeur)
+			Largeur = newString.length();
+		v.push_back(newString);
+		s = s.substr(index + 1);
+		index = s.find('\n');
+	}
+	v.push_back(s);
+	if (s.length() > Largeur)
+		Largeur = s.length();
+	text = v;
+	hauteur = v.size();
+	largeur = Largeur;
+
+	noLigne = no;
+}
+
 Mono::~Mono() {}
 
-ostream& Mono::print(ostream& os) const
+string Mono::getLine(int no, int largeurTotal)
 {
-	for (int i = 0; i < hauteur; i++)
+	if (no < hauteur)
 	{
-		if(i < text.size())
-			os << "|" << text[i] << string(largeur - (text[i].length()),' ') << "|" << endl;
-		else 
-			os << "|" << string(largeur,' ') << "|" << endl;
+		return text[no] + string(largeurTotal - text[no].length(), ' ') + "|";
 	}
-	return os;
+	else
+	{
+		return string(largeur, ' ');
+	}
 }
