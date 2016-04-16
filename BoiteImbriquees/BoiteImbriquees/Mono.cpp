@@ -54,11 +54,11 @@ Mono::Mono(string s, int no)
 
 Mono::~Mono() {}
 
-string Mono::getLine(int no, int largeurTotal)
+string Mono::getLine(int no)
 {
 	if (no < hauteur)
 	{
-		return text[no] + string(largeurTotal - text[no].length(), ' ') + "|";
+		return text[no] + string(largeur - text[no].length(), ' ') + "|";
 	}
 	else
 	{

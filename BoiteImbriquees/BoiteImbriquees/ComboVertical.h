@@ -10,5 +10,5 @@ public:
 	ComboVertical();
 	ComboVertical(Boite b1, Boite b2);
 	~ComboVertical();
-	string getLine(int no, int largeurTotal);
+	string getLine(int no);
 };

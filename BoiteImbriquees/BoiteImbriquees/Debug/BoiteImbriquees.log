@@ -1,6 +1,2 @@
-﻿  Mono.cpp
-c:\users\ap_al\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.cpp(17): warning C4018: '>' : incompatibilité signed/unsigned
-c:\users\ap_al\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.cpp(24): warning C4018: '>' : incompatibilité signed/unsigned
-c:\users\ap_al\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.cpp(39): warning C4018: '>' : incompatibilité signed/unsigned
-c:\users\ap_al\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.cpp(46): warning C4018: '>' : incompatibilité signed/unsigned
+﻿  Source.cpp
   BoiteImbriquees.vcxproj -> C:\Users\ap_al\Desktop\BoiteImbriquees\BoiteImbriquees\Debug\BoiteImbriquees.exe

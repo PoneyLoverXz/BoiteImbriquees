@@ -21,19 +21,19 @@ ComboVertical::~ComboVertical()
 	//	delete bas;
 }
 
-string ComboVertical::getLine(int no, int largeurTotal)
+string ComboVertical::getLine(int no)
 {
 	if (no < haut->getHauteur())
 	{
-		return haut->getLine(no, largeurTotal - haut->getLargeur());
+		return haut->getLine(no);
 	}
 	else
 	{
 		if (no == haut->getHauteur())
-			return string(largeurTotal, '-') + "|";
+			return string(getLargeur(), '-') + "|";
 		no -= haut->getHauteur() + 1;
 
-		string text = bas->getLine(no, largeurTotal - haut->getLargeur());
-		return text + string(largeurTotal - text.size(), ' ') + "|";
+		string text = bas->getLine(no);
+		return text;
 	}
 }

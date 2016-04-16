@@ -22,9 +22,9 @@ ComboHorizontal::~ComboHorizontal()
 	//	delete droite;
 }
 
-string ComboHorizontal::getLine(int no, int largeurTotal)
+string ComboHorizontal::getLine(int no)
 {
-	string textGauche = gauche->getLine(no, largeurTotal - gauche->getLargeur());
-	string textDroite = droite->getLine(no, largeurTotal - gauche->getLargeur());
-	return textGauche + string(gauche->getLargeur() - textGauche.length(),' ') + "|" + textDroite + string(largeur - gauche->getLargeur() - textDroite.length() -1, ' ') + "|";
+	string textGauche = gauche->getLine(no);
+	string textDroite = droite->getLine(no);
+	return textGauche + textDroite;
 }

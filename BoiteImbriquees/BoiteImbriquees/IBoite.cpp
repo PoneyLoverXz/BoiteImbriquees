@@ -24,7 +24,7 @@ void IBoite::setLargeur(int Largeur)
 	largeur = Largeur;
 }
 
-string IBoite::getLine(int no, int largeurTotal)
+string IBoite::getLine(int no)
 {
 	return "";
 }

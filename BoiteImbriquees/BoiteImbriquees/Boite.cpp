@@ -6,6 +6,7 @@
 #include <string>
 Boite::Boite() 
 {
+	m_iboite = new Mono();
 }
 
 Boite::Boite(string text)
@@ -51,7 +52,7 @@ ostream& Boite::print(ostream& os) const
 	os << "+" << string(getLargeur(), '-') << "+" << endl;
 	for (int i = 0; i < getHauteur(); ++i)
 	{
-		string line = m_iboite->getLine(i, getLargeur());
+		string line = m_iboite->getLine(i);
 		
 		os << "|" << line << endl;
 	}
@@ -64,8 +65,8 @@ ostream& Boite::print(ostream& os) const
 	return os;
 }
 
-string Boite::getLine(int no, int largeurTotal)
+string Boite::getLine(int no)
 {
-	return m_iboite->getLine(no, largeurTotal - getLargeur());
+	return m_iboite->getLine(no);
 }
 

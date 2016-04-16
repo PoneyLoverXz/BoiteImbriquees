@@ -17,6 +17,6 @@ public:
 
 	void setHauteur(int Hauteur);
 	void setLargeur(int Largeur);
-	virtual string getLine(int no, int largeurTotal);
+	virtual string getLine(int no);
 };
 

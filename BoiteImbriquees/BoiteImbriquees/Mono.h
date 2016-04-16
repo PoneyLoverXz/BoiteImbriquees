@@ -15,5 +15,5 @@ public:
 
 	~Mono();
 
-	string getLine(int no, int largeurTotal);
+	string getLine(int no);
 };
