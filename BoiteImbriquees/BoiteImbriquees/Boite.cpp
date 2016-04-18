@@ -29,13 +29,14 @@ Boite::Boite(Mono mono)
 	m_iboite = new Mono(mono);
 }
 
-Boite::~Boite()
+void Boite::Delete()
 {
-	/*if (m_iboite != nullptr)
+	if (m_iboite != nullptr)
 	{
-	delete m_iboite;
-	m_iboite = nullptr;
-	}*/
+		m_iboite->Delete();
+		delete m_iboite;
+		m_iboite = nullptr;
+	}
 }
 
 int Boite::getLargeur() const
@@ -52,21 +53,17 @@ ostream& Boite::print(ostream& os) const
 	os << "+" << string(getLargeur(), '-') << "+" << endl;
 	for (int i = 0; i < getHauteur(); ++i)
 	{
-		string line = m_iboite->getLine(i);
+		string line = m_iboite->getLine(i, getLargeur());
 		
 		os << "|" << line << endl;
 	}
 	os << "+" << string(getLargeur(), '-') << "+" << endl;
 
-	//if (m_iboite)
-	//	m_iboite->print(os);
-
-	//return os;
 	return os;
 }
 
-string Boite::getLine(int no)
+string Boite::getLine(int no, int largeurTotal)
 {
-	return m_iboite->getLine(no);
+	return m_iboite->getLine(no, largeurTotal);
 }
 

@@ -1,5 +1,4 @@
 #include "boite.h"
-#include "Cadre.h"
 #include "ComboHorizontal.h"
 #include "ComboVertical.h"
 #include <iostream>
@@ -8,7 +7,6 @@ using namespace std;
 
 ostream& operator << (ostream& os, const Boite& boite)
 {
-	//Cadre(boite, os);
 	boite.print(os);
 	return os;
 }

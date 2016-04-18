@@ -1,2 +1,12 @@
 ﻿  Source.cpp
+  Mono.cpp
+c:\users\ap_al\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.cpp(17): warning C4018: '>' : incompatibilité signed/unsigned
+c:\users\ap_al\desktop\boiteimbriquees\boiteimbriquees\boiteimbriquees\mono.cpp(24): warning C4018: '>' : incompatibilité signed/unsigned
+  IBoite.cpp
+  Boite.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  ComboVertical.cpp
+  ComboHorizontal.cpp
+  Génération de code en cours...
   BoiteImbriquees.vcxproj -> C:\Users\ap_al\Desktop\BoiteImbriquees\BoiteImbriquees\Debug\BoiteImbriquees.exe

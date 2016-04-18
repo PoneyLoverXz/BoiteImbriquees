@@ -21,9 +21,9 @@ public:
 	int getLargeur() const;
 	int getHauteur() const;
 
-	~Boite();
+	void Delete();
 
-	string getLine(int no);
+	string getLine(int no, int largeurTotal);
 
 	ostream& print(ostream& os) const;
 };

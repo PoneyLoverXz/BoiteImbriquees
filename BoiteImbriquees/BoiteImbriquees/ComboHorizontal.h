@@ -9,7 +9,8 @@ class ComboHorizontal : public IBoite
 public:
 	ComboHorizontal();
 	ComboHorizontal(Boite b1, Boite b2);
-	~ComboHorizontal();
 
-	string getLine(int no);
+	void Delete();
+
+	string getLine(int no, int largeurTotal);
 };

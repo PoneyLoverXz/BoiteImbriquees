@@ -9,6 +9,6 @@ class ComboVertical : public IBoite
 public:
 	ComboVertical();
 	ComboVertical(Boite b1, Boite b2);
-	~ComboVertical();
-	string getLine(int no);
+	void Delete();
+	string getLine(int no, int largeurTotal);
 };

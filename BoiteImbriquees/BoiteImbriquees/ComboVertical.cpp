@@ -13,27 +13,39 @@ ComboVertical::ComboVertical(Boite b1, Boite b2)
 	hauteur = haut->getHauteur() + bas->getHauteur() + 1; //1 étant la séparation entre les Boites
 }
 
-ComboVertical::~ComboVertical()
+
+void ComboVertical::Delete()
 {
-	//if (haut != nullptr)
-	//	delete haut;
-	//if (bas != nullptr)
-	//	delete bas;
+	if (haut != nullptr)
+	{
+		haut->Delete();
+		delete haut;
+		haut = nullptr;
+	}
+	if (bas != nullptr)
+	{
+		bas->Delete();
+		delete bas;
+		bas = nullptr;
+	}
 }
 
-string ComboVertical::getLine(int no)
+string ComboVertical::getLine(int no, int largeurTotal)
 {
+	string text = "";
+
 	if (no < haut->getHauteur())
 	{
-		return haut->getLine(no);
+		 text = haut->getLine(no, largeurTotal);
 	}
 	else
 	{
 		if (no == haut->getHauteur())
-			return string(getLargeur(), '-') + "|";
+			return string(largeurTotal, '-') + "|";
 		no -= haut->getHauteur() + 1;
 
-		string text = bas->getLine(no);
-		return text;
+		text = bas->getLine(no, largeurTotal);
 	}
+
+	return text;
 }

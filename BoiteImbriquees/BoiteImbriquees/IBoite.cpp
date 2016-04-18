@@ -2,7 +2,10 @@
 
 IBoite::IBoite() {}
 
-IBoite::~IBoite() {}
+void IBoite::Delete()
+{
+
+}
 
 int IBoite::getHauteur()
 {
@@ -24,7 +27,7 @@ void IBoite::setLargeur(int Largeur)
 	largeur = Largeur;
 }
 
-string IBoite::getLine(int no)
+string IBoite::getLine(int no, int largeurTotal)
 {
 	return "";
 }

@@ -143,7 +143,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Boite.cpp" />
-    <ClCompile Include="Cadre.cpp" />
     <ClCompile Include="ComboHorizontal.cpp" />
     <ClCompile Include="ComboVertical.cpp" />
     <ClCompile Include="IBoite.cpp" />
@@ -152,11 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boite.h" />
-    <ClInclude Include="Cadre.h" />
     <ClInclude Include="ComboHorizontal.h" />
     <ClInclude Include="ComboVertical.h" />
     <ClInclude Include="IBoite.h" />
-    <ClInclude Include="IEnumerateur.h" />
     <ClInclude Include="Mono.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -14,17 +14,25 @@ ComboHorizontal::ComboHorizontal(Boite b1, Boite b2)
 	hauteur = gauche->getHauteur() > droite->getHauteur() ? gauche->getHauteur() : droite->getHauteur();
 }
 
-ComboHorizontal::~ComboHorizontal()
+void ComboHorizontal::Delete()
 {
-	//if (gauche != nullptr)
-	//	delete gauche;
-	//if (droite != nullptr)
-	//	delete droite;
+	if (gauche != nullptr)
+	{
+		gauche->~Boite();
+		delete gauche;
+		gauche = nullptr;
+	}
+	if (droite != nullptr)
+	{
+		droite->~Boite();
+		delete droite;
+		droite = nullptr;
+	}
 }
 
-string ComboHorizontal::getLine(int no)
+string ComboHorizontal::getLine(int no, int largeurTotal)
 {
-	string textGauche = gauche->getLine(no);
-	string textDroite = droite->getLine(no);
+	string textGauche = gauche->getLine(no, gauche->getLargeur());
+	string textDroite = droite->getLine(no,droite->getLargeur());
 	return textGauche + textDroite;
 }
